@@ -68,4 +68,60 @@
 
 利用CsvFileWriter套件，讓使用者可將合約資料匯出成CSV檔。
 
-5.
+5.列印管理系統
+
+功能需求:
+
+PDF讀取介面:
+
+載入PDF檔，並讀取PDF檔內容及Barcode，顯示DPF內容再DataGridView上。
+
+列印管理介面:
+
+利用TXT文字檔匯入要作業的內容。
+
+每列印一筆就把當前筆刪除，並搬移到作業紀錄裡，供使用者後續可進行查閱動作。
+
+作業紀錄刪除介面:
+
+讓使用者勾選(CheckBox)要刪除的項目。
+
+開發技術:
+
+利用using BC.NetPdfBarcodeReaderTrial.All; using BC.NetPdfBarcodeReaderTrial.Pdf;，將PDF檔內Barcode進行讀取。
+
+using iTextSharp.text.pdf; using iTextSharp.text.pdf.parser;，進行PDF內容讀取。
+
+利用usercontrol(使用者控制項)在作業頁面動態新增各個機台的操作介面。
+
+利用SqlBulkCopy將大批資料一次匯入到資料庫裡，因當中有宣告TransactionScope，所以必須開啟DTC(分散式交易協調器)此功能，才能進行使用。
+
+DTC(分散式交易協調器)設定方法及用途參考路徑:https://blog.xuite.net/towns/hc/203881813
+
+利用CsvFileWriter套件，讓使用者可將作業紀錄匯出成CSV檔。
+
+6.外箱條碼比對
+
+功能需求:
+
+將操作員所選的比對條碼內容與當下所掃的外箱條碼內容進行比對，比對內容是否相符，並進行比對結果紀錄。
+
+利用RS232通訊方式連線掃描器。
+
+利用網路連線方式連線IO盒。
+
+利用EXCEL檔匯入要比對的條碼內容至資料管理區。
+
+開發技術:
+
+利用Socket進行IO盒連線。
+
+利用SerialPort進行RS232連線。
+
+利用Microsoft.Office.Interop.Excel套件製作EXCEL匯入功能。
+
+利用Array.copy處理RS232收值不完全的問題。
+
+7.CodeSoft標籤列印與Markingmate Keyence雷雕列印
+
+
