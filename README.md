@@ -103,7 +103,7 @@ DTC(分散式交易協調器)設定方法及用途參考路徑:https://blog.xuit
 
 利用Microsoft.Office.Interop.Excel套件製作EXCEL匯入功能。
 
-呼叫WebAPI帳密驗證方式取得回傳資料，並將JSON格式資料進行處理分析。
+呼叫WebAPI帳密驗證方式取得回傳資料，並將JSON格式資料進行分析處理。
 
 
 8.外箱包裝秤重系統
