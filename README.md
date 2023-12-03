@@ -129,7 +129,9 @@ DTC(分散式交易協調器)設定方法及用途參考路徑:https://blog.xuit
 開發技術:
 
 利用非同步處理(Thread.start)，分別對各站執行所需的任務。
+
 利用Socket、SerialPort通訊進行設備連線。
+
 利用Microsoft.Office.Interop.Excel套件製作EXCEL匯出功能。
 
 
