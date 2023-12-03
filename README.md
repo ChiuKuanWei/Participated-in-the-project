@@ -124,13 +124,12 @@ DTC(分散式交易協調器)設定方法及用途參考路徑:https://blog.xuit
 
 專案內容:
 
-與各站PLC設備進行連線，將各站檢測結果進行資料分析處理。
+與各站PLC設備進行點位的連線溝通，將各站檢測結果進行資料分析處理。
 
 開發技術:
 
 利用非同步處理(Thread.start)，分別對各站執行所需的任務。
 利用Socket、SerialPort通訊進行設備連線。
-
 利用Microsoft.Office.Interop.Excel套件製作EXCEL匯出功能。
 
 
