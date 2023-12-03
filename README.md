@@ -92,7 +92,6 @@ DTC(分散式交易協調器)設定方法及用途參考路徑:https://blog.xuit
 
 利用Microsoft.Office.Interop.Excel套件製作EXCEL匯入功能。
 
-利用Array.copy處理RS232收值不完全的問題。
 
 7.CodeSoft標籤列印與Markingmate Keyence雷雕列印
 
@@ -104,9 +103,8 @@ DTC(分散式交易協調器)設定方法及用途參考路徑:https://blog.xuit
 
 利用Microsoft.Office.Interop.Excel套件製作EXCEL匯入功能。
 
-利用WebAPI帳密驗證方式取得回傳資料，並將JSON格式資料進行處理分析。
+呼叫WebAPI帳密驗證方式取得回傳資料，並將JSON格式資料進行處理分析。
 
-特過傳指令的方式，與設備進行連線溝通處理
 
 8.外箱包裝秤重系統
 
@@ -130,7 +128,7 @@ DTC(分散式交易協調器)設定方法及用途參考路徑:https://blog.xuit
 
 開發技術:
 
-利用非同步處理(Thread.start)，讓各個PLC機台可以分別去做該做的事情。
+利用非同步處理(Thread.start)，分別對各站進行所需執行的任務。
 
 利用Socket、SerialPort進行設備連線。
 
